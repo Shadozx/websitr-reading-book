@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <style>
+    .button {
+      display: block;
+      width: 115px;
+      height: 25px;
+      background: #4e9caf;
+      padding: 10px;
+      text-align: center;
+      border-radius: 5px;
+      color: white;
+      font-weight: bold;
+      line-height: 25px;
+    }
+  </style>
+  <head>
+    <%- include('./head')%>
+  </head>
+  <body>
+    <%- include('./header') %>
+
+    <div class="container">
+      <div class="jumbotron">
+        <h1><%=title%></h1>
+        <p class="lead">
+          <%=book.numberOfPages%> <%=book.urlBook%> <%=book.added%>
+        </p>
+        <p>
+          <a class="btn btn-lg btn-success" href="<%=start%>" role="button"
+            >Start</a
+          >
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
